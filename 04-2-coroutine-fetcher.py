@@ -12,12 +12,12 @@ async def fetcher(session, url):
 
 
 async def main():
-    urls = ['https://google.com', 'https://apple.com'] * 10
+    urls = ['https://google.com', 'https://apple.com'] * 50
 
     async with aiohttp.ClientSession() as session:
         # result = [fetcher(session, url) for url in urls]
         result = await asyncio.gather(*[fetcher(session, url) for url in urls])
-        print(result)
+        # print(result)
 
     # session = requests.Session()
     # session.get(url)
