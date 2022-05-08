@@ -1,8 +1,9 @@
 flake8
 black
-fastapi~=0.68.1
+fastapi
 uvicorn
 jinja2==3.0.2
+odmantic
 aiofiles
 pymongo[srv]
 aiohttp==3.7.3
