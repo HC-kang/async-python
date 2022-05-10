@@ -1,10 +1,11 @@
 flake8
 black
-fastapi
+pydantic==1.6.2
+pymongo==3.12
+fastapi~=0.68.1
 uvicorn
 jinja2==3.0.2
 odmantic
 aiofiles
-pymongo[srv]
 aiohttp==3.7.3
 asyncio
